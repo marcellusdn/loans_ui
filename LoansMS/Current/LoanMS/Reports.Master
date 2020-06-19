@@ -1,0 +1,148 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Reports.Master.vb" Inherits="LoansMS.Reports" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>
+
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="text/jscript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/jscript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="~/QuickBI.ico" type="image/x-icon" />
+    <link rel="icon" type="image/ico" href="~/QuickBI.ico" />
+    <link rel="apple-touch-icon" type="image/ico" href="/~/QuickBI.ico" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css"">
+        .jumbotron
+        {
+            background-color:teal;
+            height:auto;
+            margin-top:0%;
+            margin-bottom:0%;
+            padding-top:0;
+            padding-bottom:1%;
+        }
+        .page-header
+        {
+            margin-top:0%;
+            padding-top:0%;
+            padding-bottom:0%;
+            margin-bottom:0%;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <form id="form1" runat="server" >
+        
+        <div class="container" style="max-height:100%;height:100%">
+
+            <div class="panel-group" style="padding:0; margin:0;">
+
+                <div class="panel" style="max-height:100%; padding:0; margin:0;">
+
+                    <div class="panel-heading" style="margin:0; padding:0; height:10%">
+                    
+                        <div class="jumbotron">
+
+                            <div class="col-md-4">
+                                <div class="page-header">
+                                    <h1>Quick BI</h1>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                
+                            </div>
+
+                            <div class="container-fluid" style="padding:2%; border-radius:8px;">
+                                    <div class="col-md-6">
+                                        <div class="navbar navbar-default">
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenuresize" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span><span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+                                            <div class="collapse navbar-collapse" id="mainmenuresize">
+                                                <asp:Menu
+                                                    ID="mnuMaster" runat="server" Orientation="Horizontal" IncludeStyleBlock="false"  SkipLinkText="" 
+                                                    RenderingMode="List" EnableViewState="false"
+                                                    CssClass="nav navbar-default" 
+                                                    StaticDisplayLevels="1"
+                                                    StaticMenuStyle-CssClass="nav navbar-nav"
+                                                    StaticMenuItemStyle-CssClass="nav" StaticSelectedStyle-CssClass="active"                                     
+                                                    DynamicMenuStyle-CssClass="dropdown-menu" DynamicSelectedStyle-CssClass="active" 
+                                                    MaximumDynamicDisplayLevels="5" DynamicMenuItemStyle-CssClass ="dropdown-item"
+                                                    >                                        
+                                                </asp:Menu>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                    <div class="panel-body" style="margin:0; padding:0;">
+                        
+                        <div class="panel panel-success">
+
+                            <div class="row" style="margin:0; border-radius:5px; height:auto;">
+
+                                <div class="col-sm-1 col-md-2" style="margin:0;padding:0;border-radius:5px;height:auto;">
+                                
+                                    <div class="panel-heading" style="border-radius:5px;height:auto">
+                                        <asp:Menu RenderingMode="Table" ID="mnuReports" runat="server" OnMenuItemClick="mnuReports_MenuItemClick" BorderStyle="None" Width="100%" VerticalPadding="0">
+                                            <StaticHoverStyle BorderStyle="None" Font-Bold="True" Font-Size="Small" ForeColor="#CCFFFF" />
+                                            <StaticMenuItemStyle ItemSpacing="5px" BorderStyle="None" Width="100%" />
+                                            <StaticItemTemplate>
+                                                <%# Eval("Text") %>
+                                            </StaticItemTemplate>
+                                        </asp:Menu>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="col-sm-11 col-md-10 panel-body" style="background-color:white;">
+
+                                    <div style="font-family: 'Maiandra GD'; font-size: small; font-weight: normal;">
+                                        <asp:ContentPlaceHolder ID="id_index" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </div>  
+
+                    <div class="panel-footer" style="position:relative; text-align:center">
+                        <i>Copyright Marc & Glyn 2017</i>
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+              
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="myQuick" targetNamespace="http://tempuri.org/myQuick.xsd" xmlns:mstns="http://tempuri.org/myQuick.xsd" xmlns="http://tempuri.org/myQuick.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="server=localhost;user id=root;password=!@Lam#3tag*;persistsecurityinfo=True;database=webquickbi" IsAppSettingsProperty="false" Modifier="Assembly" Name="testcon (LoansMS)" ParameterPrefix="@" Provider="MySql.Data.MySqlClient" />
+          <Connection ConnectionStringObject="server=192.168.16.6;user id=marcos;password=!@biquick12*Marcos#;persistsecurityinfo=False;database=quickbi" IsAppSettingsProperty="false" Modifier="Assembly" Name="192.168.16.6(quickbi)" ParameterPrefix="@" Provider="MySql.Data.MySqlClient" />
+          <Connection ConnectionStringObject="server=192.168.16.6;user id=marcos;password=!@biquick12*Marcos#;persistsecurityinfo=False;allowzerodatetime=True;convertzerodatetime=True;port=3308;database=webquickbi;sslmode=None" IsAppSettingsProperty="false" Modifier="Assembly" Name="192.168.16.6(webquickbi)" ParameterPrefix="@" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_active_rolesTableAdapter" GeneratorDataComponentClassName="get_active_rolesTableAdapter" Name="get_active_roles" UserDataComponentName="get_active_rolesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_active_roles`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_active_roles`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Role" DataSetColumn="Role" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_message_typesTableAdapter" GeneratorDataComponentClassName="get_message_typesTableAdapter" Name="get_message_types" UserDataComponentName="get_message_typesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_message_types`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_message_types`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code" DataSetColumn="code" />
+              <Mapping SourceColumn="message" DataSetColumn="message" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_airtime_listingTableAdapter" GeneratorDataComponentClassName="get_airtime_listingTableAdapter" Name="get_airtime_listing" UserDataComponentName="get_airtime_listingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_airtime_listing`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_airtime_listing`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="mobileno" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cusname" Precision="255" ProviderType="VarChar" Scale="255" Size="150" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cusac" Precision="255" ProviderType="VarChar" Scale="255" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="topupstart" Precision="255" ProviderType="Date" Scale="255" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="topupend" Precision="255" ProviderType="Date" Scale="255" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="topupstate" Precision="255" ProviderType="VarChar" Scale="255" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="topupstatus" Precision="255" ProviderType="VarChar" Scale="255" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Output" ParameterName="queryreponse" Precision="255" ProviderType="VarChar" Scale="255" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mobileno" DataSetColumn="mobileno" />
+              <Mapping SourceColumn="airtimeamount" DataSetColumn="airtimeamount" />
+              <Mapping SourceColumn="accountno" DataSetColumn="accountno" />
+              <Mapping SourceColumn="customer" DataSetColumn="customer" />
+              <Mapping SourceColumn="senddate" DataSetColumn="senddate" />
+              <Mapping SourceColumn="batchno" DataSetColumn="batchno" />
+              <Mapping SourceColumn="response" DataSetColumn="response" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_child_reports_displayTableAdapter" GeneratorDataComponentClassName="get_child_reports_displayTableAdapter" Name="get_child_reports_display" UserDataComponentName="get_child_reports_displayTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_child_reports_display`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_child_reports_display`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="masterreport" Precision="255" ProviderType="VarChar" Scale="255" Size="60" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="recordid" DataSetColumn="recordid" />
+              <Mapping SourceColumn="reportid" DataSetColumn="reportid" />
+              <Mapping SourceColumn="reportdisplay" DataSetColumn="reportdisplay" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_departmentsTableAdapter" GeneratorDataComponentClassName="get_departmentsTableAdapter" Name="get_departments" UserDataComponentName="get_departmentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_departments`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_departments`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code" DataSetColumn="code" />
+              <Mapping SourceColumn="department" DataSetColumn="department" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_display_roleTableAdapter" GeneratorDataComponentClassName="get_display_roleTableAdapter" Name="get_display_role" UserDataComponentName="get_display_roleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_display_role`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_display_role`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="recordid" DataSetColumn="recordid" />
+              <Mapping SourceColumn="menuid" DataSetColumn="menuid" />
+              <Mapping SourceColumn="menudisplay" DataSetColumn="menudisplay" />
+              <Mapping SourceColumn="navigationlink" DataSetColumn="navigationlink" />
+              <Mapping SourceColumn="menuparent" DataSetColumn="menuparent" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_master_reports_displayTableAdapter" GeneratorDataComponentClassName="get_master_reports_displayTableAdapter" Name="get_master_reports_display" UserDataComponentName="get_master_reports_displayTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_master_reports_display`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_master_reports_display`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="recordid" DataSetColumn="recordid" />
+              <Mapping SourceColumn="reportid" DataSetColumn="reportid" />
+              <Mapping SourceColumn="reportdisplay" DataSetColumn="reportdisplay" />
+              <Mapping SourceColumn="reportlink" DataSetColumn="reportlink" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_messages_listingTableAdapter" GeneratorDataComponentClassName="get_messages_listingTableAdapter" Name="get_messages_listing" UserDataComponentName="get_messages_listingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_messages_listing`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_messages_listing`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="mobileno" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cusname" Precision="255" ProviderType="VarChar" Scale="255" Size="150" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cusac" Precision="255" ProviderType="VarChar" Scale="255" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="msgstart" Precision="255" ProviderType="Date" Scale="255" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="msgend" Precision="255" ProviderType="Date" Scale="255" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="msgstate" Precision="255" ProviderType="VarChar" Scale="255" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="msgstatus" Precision="255" ProviderType="VarChar" Scale="255" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Output" ParameterName="queryreponse" Precision="255" ProviderType="VarChar" Scale="255" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mobileno" DataSetColumn="mobileno" />
+              <Mapping SourceColumn="message" DataSetColumn="message" />
+              <Mapping SourceColumn="accountno" DataSetColumn="accountno" />
+              <Mapping SourceColumn="customer" DataSetColumn="customer" />
+              <Mapping SourceColumn="cost" DataSetColumn="cost" />
+              <Mapping SourceColumn="senddate" DataSetColumn="senddate" />
+              <Mapping SourceColumn="batchno" DataSetColumn="batchno" />
+              <Mapping SourceColumn="response" DataSetColumn="response" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_sys_password_valuesTableAdapter" GeneratorDataComponentClassName="get_sys_password_valuesTableAdapter" Name="get_sys_password_values" UserDataComponentName="get_sys_password_valuesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_sys_password_values`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_sys_password_values`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Enforce History" DataSetColumn="Enforce History" />
+              <Mapping SourceColumn="Password Duration" DataSetColumn="Password Duration" />
+              <Mapping SourceColumn="Max Length" DataSetColumn="Max Length" />
+              <Mapping SourceColumn="Min Length" DataSetColumn="Min Length" />
+              <Mapping SourceColumn="Min Numbers" DataSetColumn="Min Numbers" />
+              <Mapping SourceColumn="Min Special" DataSetColumn="Min Special" />
+              <Mapping SourceColumn="Min Upper" DataSetColumn="Min Upper" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_report_menus_roleTableAdapter" GeneratorDataComponentClassName="get_report_menus_roleTableAdapter" Name="get_report_menus_role" UserDataComponentName="get_report_menus_roleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_report_menus_role`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_report_menus_role`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="selrole" Precision="255" ProviderType="VarChar" Scale="255" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Control" DataSetColumn="Control" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Access" DataSetColumn="Access" />
+              <Mapping SourceColumn="Parent" DataSetColumn="Parent" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_pending_jobsTableAdapter" GeneratorDataComponentClassName="get_pending_jobsTableAdapter" Name="get_pending_jobs" UserDataComponentName="get_pending_jobsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_pending_jobs`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_pending_jobs`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sessionid" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="jobno" DataSetColumn="jobno" />
+              <Mapping SourceColumn="records" DataSetColumn="records" />
+              <Mapping SourceColumn="jobdate" DataSetColumn="jobdate" />
+              <Mapping SourceColumn="logger" DataSetColumn="logger" />
+              <Mapping SourceColumn="jobtime" DataSetColumn="jobtime" />
+              <Mapping SourceColumn="jobstatus" DataSetColumn="jobstatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_scheduled_jobsTableAdapter" GeneratorDataComponentClassName="get_scheduled_jobsTableAdapter" Name="get_scheduled_jobs" UserDataComponentName="get_scheduled_jobsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_scheduled_jobs`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_scheduled_jobs`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="jobdate" Precision="255" ProviderType="Date" Scale="255" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="jobdept" Precision="255" ProviderType="VarChar" Scale="255" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="jobmessage" Precision="255" ProviderType="VarChar" Scale="255" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sessid" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="recid" DataSetColumn="recid" />
+              <Mapping SourceColumn="noofrecords" DataSetColumn="noofrecords" />
+              <Mapping SourceColumn="jdate" DataSetColumn="jdate" />
+              <Mapping SourceColumn="jtime" DataSetColumn="jtime" />
+              <Mapping SourceColumn="jdep" DataSetColumn="jdep" />
+              <Mapping SourceColumn="jtype" DataSetColumn="jtype" />
+              <Mapping SourceColumn="jstatus" DataSetColumn="jstatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_postbank_balancesTableAdapter" GeneratorDataComponentClassName="get_postbank_balancesTableAdapter" Name="get_postbank_balances" UserDataComponentName="get_postbank_balancesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_postbank_balances`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_postbank_balances`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sessionid" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Customer" DataSetColumn="Customer" />
+              <Mapping SourceColumn="AccountNo" DataSetColumn="AccountNo" />
+              <Mapping SourceColumn="LoanAccount" DataSetColumn="LoanAccount" />
+              <Mapping SourceColumn="AccountBalance" DataSetColumn="AccountBalance" />
+              <Mapping SourceColumn="LoanArrears" DataSetColumn="LoanArrears" />
+              <Mapping SourceColumn="RecoveryAmount" DataSetColumn="RecoveryAmount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_postbank_statementTableAdapter" GeneratorDataComponentClassName="get_postbank_statementTableAdapter" Name="get_postbank_statement" UserDataComponentName="get_postbank_statementTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_postbank_statement`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_postbank_statement`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="reqid" Precision="255" ProviderType="VarChar" Scale="255" Size="24" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="bankac" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sessid" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="acno" DataSetColumn="acno" />
+              <Mapping SourceColumn="trandate" DataSetColumn="trandate" />
+              <Mapping SourceColumn="realdate" DataSetColumn="realdate" />
+              <Mapping SourceColumn="trxndetails" DataSetColumn="trxndetails" />
+              <Mapping SourceColumn="dramt" DataSetColumn="dramt" />
+              <Mapping SourceColumn="cramt" DataSetColumn="cramt" />
+              <Mapping SourceColumn="runbal" DataSetColumn="runbal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="get_postbank_clientdataTableAdapter" GeneratorDataComponentClassName="get_postbank_clientdataTableAdapter" Name="get_postbank_clientdata" UserDataComponentName="get_postbank_clientdataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="192.168.16.6(webquickbi)" DbObjectName="`webquickbi`.`get_postbank_clientdata`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`webquickbi`.`get_postbank_clientdata`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="reqid" Precision="255" ProviderType="VarChar" Scale="255" Size="24" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cuser" Precision="255" ProviderType="VarChar" Scale="255" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sessid" Precision="255" ProviderType="VarChar" Scale="255" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PBAccount" DataSetColumn="PBAccount" />
+              <Mapping SourceColumn="Customer" DataSetColumn="Customer" />
+              <Mapping SourceColumn="Account_Status" DataSetColumn="Account_Status" />
+              <Mapping SourceColumn="Open_Date" DataSetColumn="Open_Date" />
+              <Mapping SourceColumn="Last_Trxn_Date" DataSetColumn="Last_Trxn_Date" />
+              <Mapping SourceColumn="Account_Balance" DataSetColumn="Account_Balance" />
+              <Mapping SourceColumn="PostBank_ClientID" DataSetColumn="PostBank_ClientID" />
+              <Mapping SourceColumn="MobileNo" DataSetColumn="MobileNo" />
+              <Mapping SourceColumn="Pension_Amount" DataSetColumn="Pension_Amount" />
+              <Mapping SourceColumn="Premier_Instal" DataSetColumn="Premier_Instal" />
+              <Mapping SourceColumn="Fin_Instal" DataSetColumn="Fin_Instal" />
+              <Mapping SourceColumn="Pension_Ratio" DataSetColumn="Pension_Ratio" />
+              <Mapping SourceColumn="Client_Limit" DataSetColumn="Client_Limit" />
+              <Mapping SourceColumn="Available_Pension" DataSetColumn="Available_Pension" />
+              <Mapping SourceColumn="Maximum_Loan" DataSetColumn="Maximum_Loan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="myQuick" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="myQuick" msprop:Generator_UserDSName="myQuick">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="get_active_roles" msprop:Generator_TableClassName="get_active_rolesDataTable" msprop:Generator_TableVarName="tableget_active_roles" msprop:Generator_RowChangedName="get_active_rolesRowChanged" msprop:Generator_TablePropName="get_active_roles" msprop:Generator_RowDeletingName="get_active_rolesRowDeleting" msprop:Generator_RowChangingName="get_active_rolesRowChanging" msprop:Generator_RowEvHandlerName="get_active_rolesRowChangeEventHandler" msprop:Generator_RowDeletedName="get_active_rolesRowDeleted" msprop:Generator_RowClassName="get_active_rolesRow" msprop:Generator_UserTableName="get_active_roles" msprop:Generator_RowEvArgName="get_active_rolesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:unsignedInt" />
+              <xs:element name="Role" msprop:Generator_ColumnVarNameInTable="columnRole" msprop:Generator_ColumnPropNameInRow="Role" msprop:Generator_ColumnPropNameInTable="RoleColumn" msprop:Generator_UserColumnName="Role">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="33" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_message_types" msprop:Generator_TableClassName="get_message_typesDataTable" msprop:Generator_TableVarName="tableget_message_types" msprop:Generator_RowChangedName="get_message_typesRowChanged" msprop:Generator_TablePropName="get_message_types" msprop:Generator_RowDeletingName="get_message_typesRowDeleting" msprop:Generator_RowChangingName="get_message_typesRowChanging" msprop:Generator_RowEvHandlerName="get_message_typesRowChangeEventHandler" msprop:Generator_RowDeletedName="get_message_typesRowDeleted" msprop:Generator_RowClassName="get_message_typesRow" msprop:Generator_UserTableName="get_message_types" msprop:Generator_RowEvArgName="get_message_typesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:unsignedInt" />
+              <xs:element name="message" msprop:Generator_ColumnVarNameInTable="columnmessage" msprop:Generator_ColumnPropNameInRow="message" msprop:Generator_ColumnPropNameInTable="messageColumn" msprop:Generator_UserColumnName="message">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="22" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_airtime_listing" msprop:Generator_TableClassName="get_airtime_listingDataTable" msprop:Generator_TableVarName="tableget_airtime_listing" msprop:Generator_RowChangedName="get_airtime_listingRowChanged" msprop:Generator_TablePropName="get_airtime_listing" msprop:Generator_RowDeletingName="get_airtime_listingRowDeleting" msprop:Generator_RowChangingName="get_airtime_listingRowChanging" msprop:Generator_RowEvHandlerName="get_airtime_listingRowChangeEventHandler" msprop:Generator_RowDeletedName="get_airtime_listingRowDeleted" msprop:Generator_RowClassName="get_airtime_listingRow" msprop:Generator_UserTableName="get_airtime_listing" msprop:Generator_RowEvArgName="get_airtime_listingRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mobileno" msprop:Generator_ColumnVarNameInTable="columnmobileno" msprop:Generator_ColumnPropNameInRow="mobileno" msprop:Generator_ColumnPropNameInTable="mobilenoColumn" msprop:Generator_UserColumnName="mobileno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="airtimeamount" msprop:Generator_ColumnVarNameInTable="columnairtimeamount" msprop:Generator_ColumnPropNameInRow="airtimeamount" msprop:Generator_ColumnPropNameInTable="airtimeamountColumn" msprop:Generator_UserColumnName="airtimeamount" type="xs:int" minOccurs="0" />
+              <xs:element name="accountno" msprop:Generator_ColumnVarNameInTable="columnaccountno" msprop:Generator_ColumnPropNameInRow="accountno" msprop:Generator_ColumnPropNameInTable="accountnoColumn" msprop:Generator_UserColumnName="accountno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="customer" msprop:Generator_ColumnVarNameInTable="columncustomer" msprop:Generator_ColumnPropNameInRow="customer" msprop:Generator_ColumnPropNameInTable="customerColumn" msprop:Generator_UserColumnName="customer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="senddate" msprop:Generator_ColumnVarNameInTable="columnsenddate" msprop:Generator_ColumnPropNameInRow="senddate" msprop:Generator_ColumnPropNameInTable="senddateColumn" msprop:Generator_UserColumnName="senddate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="batchno" msprop:Generator_ColumnVarNameInTable="columnbatchno" msprop:Generator_ColumnPropNameInRow="batchno" msprop:Generator_ColumnPropNameInTable="batchnoColumn" msprop:Generator_UserColumnName="batchno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="response" msprop:Generator_ColumnVarNameInTable="columnresponse" msprop:Generator_ColumnPropNameInRow="response" msprop:Generator_ColumnPropNameInTable="responseColumn" msprop:Generator_UserColumnName="response" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_child_reports_display" msprop:Generator_TableClassName="get_child_reports_displayDataTable" msprop:Generator_TableVarName="tableget_child_reports_display" msprop:Generator_RowChangedName="get_child_reports_displayRowChanged" msprop:Generator_TablePropName="get_child_reports_display" msprop:Generator_RowDeletingName="get_child_reports_displayRowDeleting" msprop:Generator_RowChangingName="get_child_reports_displayRowChanging" msprop:Generator_RowEvHandlerName="get_child_reports_displayRowChangeEventHandler" msprop:Generator_RowDeletedName="get_child_reports_displayRowDeleted" msprop:Generator_RowClassName="get_child_reports_displayRow" msprop:Generator_UserTableName="get_child_reports_display" msprop:Generator_RowEvArgName="get_child_reports_displayRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="recordid" msprop:Generator_ColumnVarNameInTable="columnrecordid" msprop:Generator_ColumnPropNameInRow="recordid" msprop:Generator_ColumnPropNameInTable="recordidColumn" msprop:Generator_UserColumnName="recordid" type="xs:unsignedInt" />
+              <xs:element name="reportid" msprop:Generator_ColumnVarNameInTable="columnreportid" msprop:Generator_ColumnPropNameInRow="reportid" msprop:Generator_ColumnPropNameInTable="reportidColumn" msprop:Generator_UserColumnName="reportid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="33" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reportdisplay" msprop:Generator_ColumnVarNameInTable="columnreportdisplay" msprop:Generator_ColumnPropNameInRow="reportdisplay" msprop:Generator_ColumnPropNameInTable="reportdisplayColumn" msprop:Generator_UserColumnName="reportdisplay">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_departments" msprop:Generator_TableClassName="get_departmentsDataTable" msprop:Generator_TableVarName="tableget_departments" msprop:Generator_RowChangedName="get_departmentsRowChanged" msprop:Generator_TablePropName="get_departments" msprop:Generator_RowDeletingName="get_departmentsRowDeleting" msprop:Generator_RowChangingName="get_departmentsRowChanging" msprop:Generator_RowEvHandlerName="get_departmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="get_departmentsRowDeleted" msprop:Generator_RowClassName="get_departmentsRow" msprop:Generator_UserTableName="get_departments" msprop:Generator_RowEvArgName="get_departmentsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:unsignedInt" />
+              <xs:element name="department" msprop:Generator_ColumnVarNameInTable="columndepartment" msprop:Generator_ColumnPropNameInRow="department" msprop:Generator_ColumnPropNameInTable="departmentColumn" msprop:Generator_UserColumnName="department">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="22" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_display_role" msprop:Generator_TableClassName="get_display_roleDataTable" msprop:Generator_TableVarName="tableget_display_role" msprop:Generator_RowChangedName="get_display_roleRowChanged" msprop:Generator_TablePropName="get_display_role" msprop:Generator_RowDeletingName="get_display_roleRowDeleting" msprop:Generator_RowChangingName="get_display_roleRowChanging" msprop:Generator_RowEvHandlerName="get_display_roleRowChangeEventHandler" msprop:Generator_RowDeletedName="get_display_roleRowDeleted" msprop:Generator_RowClassName="get_display_roleRow" msprop:Generator_UserTableName="get_display_role" msprop:Generator_RowEvArgName="get_display_roleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="recordid" msprop:Generator_ColumnVarNameInTable="columnrecordid" msprop:Generator_ColumnPropNameInRow="recordid" msprop:Generator_ColumnPropNameInTable="recordidColumn" msprop:Generator_UserColumnName="recordid" type="xs:unsignedInt" />
+              <xs:element name="menuid" msprop:Generator_ColumnVarNameInTable="columnmenuid" msprop:Generator_ColumnPropNameInRow="menuid" msprop:Generator_ColumnPropNameInTable="menuidColumn" msprop:Generator_UserColumnName="menuid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="37" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="menudisplay" msprop:Generator_ColumnVarNameInTable="columnmenudisplay" msprop:Generator_ColumnPropNameInRow="menudisplay" msprop:Generator_ColumnPropNameInTable="menudisplayColumn" msprop:Generator_UserColumnName="menudisplay">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="37" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="navigationlink" msprop:Generator_ColumnVarNameInTable="columnnavigationlink" msprop:Generator_ColumnPropNameInRow="navigationlink" msprop:Generator_ColumnPropNameInTable="navigationlinkColumn" msprop:Generator_UserColumnName="navigationlink">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="37" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="menuparent" msprop:Generator_ColumnVarNameInTable="columnmenuparent" msprop:Generator_ColumnPropNameInRow="menuparent" msprop:Generator_ColumnPropNameInTable="menuparentColumn" msprop:Generator_UserColumnName="menuparent" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="37" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_master_reports_display" msprop:Generator_TableClassName="get_master_reports_displayDataTable" msprop:Generator_TableVarName="tableget_master_reports_display" msprop:Generator_RowChangedName="get_master_reports_displayRowChanged" msprop:Generator_TablePropName="get_master_reports_display" msprop:Generator_RowDeletingName="get_master_reports_displayRowDeleting" msprop:Generator_RowChangingName="get_master_reports_displayRowChanging" msprop:Generator_RowEvHandlerName="get_master_reports_displayRowChangeEventHandler" msprop:Generator_RowDeletedName="get_master_reports_displayRowDeleted" msprop:Generator_RowClassName="get_master_reports_displayRow" msprop:Generator_UserTableName="get_master_reports_display" msprop:Generator_RowEvArgName="get_master_reports_displayRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="recordid" msprop:Generator_ColumnVarNameInTable="columnrecordid" msprop:Generator_ColumnPropNameInRow="recordid" msprop:Generator_ColumnPropNameInTable="recordidColumn" msprop:Generator_UserColumnName="recordid" type="xs:unsignedInt" />
+              <xs:element name="reportid" msprop:Generator_ColumnVarNameInTable="columnreportid" msprop:Generator_ColumnPropNameInRow="reportid" msprop:Generator_ColumnPropNameInTable="reportidColumn" msprop:Generator_UserColumnName="reportid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="33" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reportdisplay" msprop:Generator_ColumnVarNameInTable="columnreportdisplay" msprop:Generator_ColumnPropNameInRow="reportdisplay" msprop:Generator_ColumnPropNameInTable="reportdisplayColumn" msprop:Generator_UserColumnName="reportdisplay">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reportlink" msprop:Generator_ColumnVarNameInTable="columnreportlink" msprop:Generator_ColumnPropNameInRow="reportlink" msprop:Generator_ColumnPropNameInTable="reportlinkColumn" msprop:Generator_UserColumnName="reportlink" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_messages_listing" msprop:Generator_TableClassName="get_messages_listingDataTable" msprop:Generator_TableVarName="tableget_messages_listing" msprop:Generator_RowChangedName="get_messages_listingRowChanged" msprop:Generator_TablePropName="get_messages_listing" msprop:Generator_RowDeletingName="get_messages_listingRowDeleting" msprop:Generator_RowChangingName="get_messages_listingRowChanging" msprop:Generator_RowEvHandlerName="get_messages_listingRowChangeEventHandler" msprop:Generator_RowDeletedName="get_messages_listingRowDeleted" msprop:Generator_RowClassName="get_messages_listingRow" msprop:Generator_UserTableName="get_messages_listing" msprop:Generator_RowEvArgName="get_messages_listingRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mobileno" msprop:Generator_ColumnVarNameInTable="columnmobileno" msprop:Generator_ColumnPropNameInRow="mobileno" msprop:Generator_ColumnPropNameInTable="mobilenoColumn" msprop:Generator_UserColumnName="mobileno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="message" msprop:Generator_ColumnVarNameInTable="columnmessage" msprop:Generator_ColumnPropNameInRow="message" msprop:Generator_ColumnPropNameInTable="messageColumn" msprop:Generator_UserColumnName="message" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="accountno" msprop:Generator_ColumnVarNameInTable="columnaccountno" msprop:Generator_ColumnPropNameInRow="accountno" msprop:Generator_ColumnPropNameInTable="accountnoColumn" msprop:Generator_UserColumnName="accountno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="customer" msprop:Generator_ColumnVarNameInTable="columncustomer" msprop:Generator_ColumnPropNameInRow="customer" msprop:Generator_ColumnPropNameInTable="customerColumn" msprop:Generator_UserColumnName="customer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="senddate" msprop:Generator_ColumnVarNameInTable="columnsenddate" msprop:Generator_ColumnPropNameInRow="senddate" msprop:Generator_ColumnPropNameInTable="senddateColumn" msprop:Generator_UserColumnName="senddate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="batchno" msprop:Generator_ColumnVarNameInTable="columnbatchno" msprop:Generator_ColumnPropNameInRow="batchno" msprop:Generator_ColumnPropNameInTable="batchnoColumn" msprop:Generator_UserColumnName="batchno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="response" msprop:Generator_ColumnVarNameInTable="columnresponse" msprop:Generator_ColumnPropNameInRow="response" msprop:Generator_ColumnPropNameInTable="responseColumn" msprop:Generator_UserColumnName="response" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn" msprop:Generator_UserColumnName="state" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_sys_password_values" msprop:Generator_TableClassName="get_sys_password_valuesDataTable" msprop:Generator_TableVarName="tableget_sys_password_values" msprop:Generator_RowChangedName="get_sys_password_valuesRowChanged" msprop:Generator_TablePropName="get_sys_password_values" msprop:Generator_RowDeletingName="get_sys_password_valuesRowDeleting" msprop:Generator_RowChangingName="get_sys_password_valuesRowChanging" msprop:Generator_RowEvHandlerName="get_sys_password_valuesRowChangeEventHandler" msprop:Generator_RowDeletedName="get_sys_password_valuesRowDeleted" msprop:Generator_RowClassName="get_sys_password_valuesRow" msprop:Generator_UserTableName="get_sys_password_values" msprop:Generator_RowEvArgName="get_sys_password_valuesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Enforce_x0020_History" msprop:Generator_ColumnVarNameInTable="columnEnforce_History" msprop:Generator_ColumnPropNameInRow="Enforce_History" msprop:Generator_ColumnPropNameInTable="Enforce_HistoryColumn" msprop:Generator_UserColumnName="Enforce History" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password_x0020_Duration" msprop:Generator_ColumnVarNameInTable="columnPassword_Duration" msprop:Generator_ColumnPropNameInRow="Password_Duration" msprop:Generator_ColumnPropNameInTable="Password_DurationColumn" msprop:Generator_UserColumnName="Password Duration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Max_x0020_Length" msprop:Generator_ColumnVarNameInTable="columnMax_Length" msprop:Generator_ColumnPropNameInRow="Max_Length" msprop:Generator_ColumnPropNameInTable="Max_LengthColumn" msprop:Generator_UserColumnName="Max Length" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Min_x0020_Length" msprop:Generator_ColumnVarNameInTable="columnMin_Length" msprop:Generator_ColumnPropNameInRow="Min_Length" msprop:Generator_ColumnPropNameInTable="Min_LengthColumn" msprop:Generator_UserColumnName="Min Length" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Min_x0020_Numbers" msprop:Generator_ColumnVarNameInTable="columnMin_Numbers" msprop:Generator_ColumnPropNameInRow="Min_Numbers" msprop:Generator_ColumnPropNameInTable="Min_NumbersColumn" msprop:Generator_UserColumnName="Min Numbers" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Min_x0020_Special" msprop:Generator_ColumnVarNameInTable="columnMin_Special" msprop:Generator_ColumnPropNameInRow="Min_Special" msprop:Generator_ColumnPropNameInTable="Min_SpecialColumn" msprop:Generator_UserColumnName="Min Special" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Min_x0020_Upper" msprop:Generator_ColumnVarNameInTable="columnMin_Upper" msprop:Generator_ColumnPropNameInRow="Min_Upper" msprop:Generator_ColumnPropNameInTable="Min_UpperColumn" msprop:Generator_UserColumnName="Min Upper" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12582911" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_report_menus_role" msprop:Generator_TableClassName="get_report_menus_roleDataTable" msprop:Generator_TableVarName="tableget_report_menus_role" msprop:Generator_RowChangedName="get_report_menus_roleRowChanged" msprop:Generator_TablePropName="get_report_menus_role" msprop:Generator_RowDeletingName="get_report_menus_roleRowDeleting" msprop:Generator_RowChangingName="get_report_menus_roleRowChanging" msprop:Generator_RowEvHandlerName="get_report_menus_roleRowChangeEventHandler" msprop:Generator_RowDeletedName="get_report_menus_roleRowDeleted" msprop:Generator_RowClassName="get_report_menus_roleRow" msprop:Generator_UserTableName="get_report_menus_role" msprop:Generator_RowEvArgName="get_report_menus_roleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Control" msprop:Generator_ColumnVarNameInTable="columnControl" msprop:Generator_ColumnPropNameInRow="Control" msprop:Generator_ColumnPropNameInTable="ControlColumn" msprop:Generator_UserColumnName="Control" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Access" msprop:Generator_ColumnVarNameInTable="columnAccess" msprop:Generator_ColumnPropNameInRow="Access" msprop:Generator_ColumnPropNameInTable="AccessColumn" msprop:Generator_UserColumnName="Access" type="xs:byte" minOccurs="0" />
+              <xs:element name="Parent" msprop:Generator_ColumnVarNameInTable="columnParent" msprop:Generator_ColumnPropNameInRow="Parent" msprop:Generator_ColumnPropNameInTable="ParentColumn" msprop:Generator_UserColumnName="Parent" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_pending_jobs" msprop:Generator_TableClassName="get_pending_jobsDataTable" msprop:Generator_TableVarName="tableget_pending_jobs" msprop:Generator_TablePropName="get_pending_jobs" msprop:Generator_RowDeletingName="get_pending_jobsRowDeleting" msprop:Generator_RowChangingName="get_pending_jobsRowChanging" msprop:Generator_RowEvHandlerName="get_pending_jobsRowChangeEventHandler" msprop:Generator_RowDeletedName="get_pending_jobsRowDeleted" msprop:Generator_UserTableName="get_pending_jobs" msprop:Generator_RowChangedName="get_pending_jobsRowChanged" msprop:Generator_RowEvArgName="get_pending_jobsRowChangeEvent" msprop:Generator_RowClassName="get_pending_jobsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jobno" msprop:Generator_ColumnVarNameInTable="columnjobno" msprop:Generator_ColumnPropNameInRow="jobno" msprop:Generator_ColumnPropNameInTable="jobnoColumn" msprop:Generator_UserColumnName="jobno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="records" msprop:Generator_ColumnVarNameInTable="columnrecords" msprop:Generator_ColumnPropNameInRow="records" msprop:Generator_ColumnPropNameInTable="recordsColumn" msprop:Generator_UserColumnName="records" type="xs:int" minOccurs="0" />
+              <xs:element name="jobdate" msdata:DataType="MySql.Data.Types.MySqlDateTime, MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" msprop:Generator_ColumnVarNameInTable="columnjobdate" msprop:Generator_ColumnPropNameInRow="jobdate" msprop:Generator_ColumnPropNameInTable="jobdateColumn" msprop:Generator_UserColumnName="jobdate" type="xs:anyType" minOccurs="0" />
+              <xs:element name="logger" msprop:Generator_ColumnVarNameInTable="columnlogger" msprop:Generator_ColumnPropNameInRow="logger" msprop:Generator_ColumnPropNameInTable="loggerColumn" msprop:Generator_UserColumnName="logger" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jobtime" msprop:Generator_ColumnVarNameInTable="columnjobtime" msprop:Generator_ColumnPropNameInRow="jobtime" msprop:Generator_ColumnPropNameInTable="jobtimeColumn" msprop:Generator_UserColumnName="jobtime" type="xs:duration" minOccurs="0" />
+              <xs:element name="jobstatus" msprop:Generator_ColumnVarNameInTable="columnjobstatus" msprop:Generator_ColumnPropNameInRow="jobstatus" msprop:Generator_ColumnPropNameInTable="jobstatusColumn" msprop:Generator_UserColumnName="jobstatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_scheduled_jobs" msprop:Generator_TableClassName="get_scheduled_jobsDataTable" msprop:Generator_TableVarName="tableget_scheduled_jobs" msprop:Generator_TablePropName="get_scheduled_jobs" msprop:Generator_RowDeletingName="get_scheduled_jobsRowDeleting" msprop:Generator_RowChangingName="get_scheduled_jobsRowChanging" msprop:Generator_RowEvHandlerName="get_scheduled_jobsRowChangeEventHandler" msprop:Generator_RowDeletedName="get_scheduled_jobsRowDeleted" msprop:Generator_UserTableName="get_scheduled_jobs" msprop:Generator_RowChangedName="get_scheduled_jobsRowChanged" msprop:Generator_RowEvArgName="get_scheduled_jobsRowChangeEvent" msprop:Generator_RowClassName="get_scheduled_jobsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="recid" msprop:Generator_ColumnVarNameInTable="columnrecid" msprop:Generator_ColumnPropNameInRow="recid" msprop:Generator_ColumnPropNameInTable="recidColumn" msprop:Generator_UserColumnName="recid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noofrecords" msprop:Generator_ColumnVarNameInTable="columnnoofrecords" msprop:Generator_ColumnPropNameInRow="noofrecords" msprop:Generator_ColumnPropNameInTable="noofrecordsColumn" msprop:Generator_UserColumnName="noofrecords" type="xs:int" minOccurs="0" />
+              <xs:element name="jdate" msdata:DataType="MySql.Data.Types.MySqlDateTime, MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" msprop:Generator_ColumnVarNameInTable="columnjdate" msprop:Generator_ColumnPropNameInRow="jdate" msprop:Generator_ColumnPropNameInTable="jdateColumn" msprop:Generator_UserColumnName="jdate" type="xs:anyType" minOccurs="0" />
+              <xs:element name="jtime" msprop:Generator_ColumnVarNameInTable="columnjtime" msprop:Generator_ColumnPropNameInRow="jtime" msprop:Generator_ColumnPropNameInTable="jtimeColumn" msprop:Generator_UserColumnName="jtime" type="xs:duration" minOccurs="0" />
+              <xs:element name="jdep" msprop:Generator_ColumnVarNameInTable="columnjdep" msprop:Generator_ColumnPropNameInRow="jdep" msprop:Generator_ColumnPropNameInTable="jdepColumn" msprop:Generator_UserColumnName="jdep" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jtype" msprop:Generator_ColumnVarNameInTable="columnjtype" msprop:Generator_ColumnPropNameInRow="jtype" msprop:Generator_ColumnPropNameInTable="jtypeColumn" msprop:Generator_UserColumnName="jtype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jstatus" msprop:Generator_ColumnVarNameInTable="columnjstatus" msprop:Generator_ColumnPropNameInRow="jstatus" msprop:Generator_ColumnPropNameInTable="jstatusColumn" msprop:Generator_UserColumnName="jstatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_postbank_balances" msprop:Generator_TableClassName="get_postbank_balancesDataTable" msprop:Generator_TableVarName="tableget_postbank_balances" msprop:Generator_TablePropName="get_postbank_balances" msprop:Generator_RowDeletingName="get_postbank_balancesRowDeleting" msprop:Generator_RowChangingName="get_postbank_balancesRowChanging" msprop:Generator_RowEvHandlerName="get_postbank_balancesRowChangeEventHandler" msprop:Generator_RowDeletedName="get_postbank_balancesRowDeleted" msprop:Generator_UserTableName="get_postbank_balances" msprop:Generator_RowChangedName="get_postbank_balancesRowChanged" msprop:Generator_RowEvArgName="get_postbank_balancesRowChangeEvent" msprop:Generator_RowClassName="get_postbank_balancesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountNo" msprop:Generator_ColumnVarNameInTable="columnAccountNo" msprop:Generator_ColumnPropNameInRow="AccountNo" msprop:Generator_ColumnPropNameInTable="AccountNoColumn" msprop:Generator_UserColumnName="AccountNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoanAccount" msprop:Generator_ColumnVarNameInTable="columnLoanAccount" msprop:Generator_ColumnPropNameInRow="LoanAccount" msprop:Generator_ColumnPropNameInTable="LoanAccountColumn" msprop:Generator_UserColumnName="LoanAccount">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountBalance" msprop:Generator_ColumnVarNameInTable="columnAccountBalance" msprop:Generator_ColumnPropNameInRow="AccountBalance" msprop:Generator_ColumnPropNameInTable="AccountBalanceColumn" msprop:Generator_UserColumnName="AccountBalance" type="xs:double" />
+              <xs:element name="LoanArrears" msprop:Generator_ColumnVarNameInTable="columnLoanArrears" msprop:Generator_ColumnPropNameInRow="LoanArrears" msprop:Generator_ColumnPropNameInTable="LoanArrearsColumn" msprop:Generator_UserColumnName="LoanArrears" type="xs:double" />
+              <xs:element name="RecoveryAmount" msprop:Generator_ColumnVarNameInTable="columnRecoveryAmount" msprop:Generator_ColumnPropNameInRow="RecoveryAmount" msprop:Generator_ColumnPropNameInTable="RecoveryAmountColumn" msprop:Generator_UserColumnName="RecoveryAmount" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_postbank_statement" msprop:Generator_TableClassName="get_postbank_statementDataTable" msprop:Generator_TableVarName="tableget_postbank_statement" msprop:Generator_RowChangedName="get_postbank_statementRowChanged" msprop:Generator_TablePropName="get_postbank_statement" msprop:Generator_RowDeletingName="get_postbank_statementRowDeleting" msprop:Generator_RowChangingName="get_postbank_statementRowChanging" msprop:Generator_RowEvHandlerName="get_postbank_statementRowChangeEventHandler" msprop:Generator_RowDeletedName="get_postbank_statementRowDeleted" msprop:Generator_RowClassName="get_postbank_statementRow" msprop:Generator_UserTableName="get_postbank_statement" msprop:Generator_RowEvArgName="get_postbank_statementRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="acno" msprop:Generator_ColumnVarNameInTable="columnacno" msprop:Generator_ColumnPropNameInRow="acno" msprop:Generator_ColumnPropNameInTable="acnoColumn" msprop:Generator_UserColumnName="acno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="trandate" msprop:Generator_ColumnVarNameInTable="columntrandate" msprop:Generator_ColumnPropNameInRow="trandate" msprop:Generator_ColumnPropNameInTable="trandateColumn" msprop:Generator_UserColumnName="trandate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="realdate" msprop:Generator_ColumnVarNameInTable="columnrealdate" msprop:Generator_ColumnPropNameInRow="realdate" msprop:Generator_ColumnPropNameInTable="realdateColumn" msprop:Generator_UserColumnName="realdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="trxndetails" msprop:Generator_ColumnVarNameInTable="columntrxndetails" msprop:Generator_ColumnPropNameInRow="trxndetails" msprop:Generator_ColumnPropNameInTable="trxndetailsColumn" msprop:Generator_UserColumnName="trxndetails" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dramt" msprop:Generator_ColumnVarNameInTable="columndramt" msprop:Generator_ColumnPropNameInRow="dramt" msprop:Generator_ColumnPropNameInTable="dramtColumn" msprop:Generator_UserColumnName="dramt" type="xs:double" minOccurs="0" />
+              <xs:element name="cramt" msprop:Generator_ColumnVarNameInTable="columncramt" msprop:Generator_ColumnPropNameInRow="cramt" msprop:Generator_ColumnPropNameInTable="cramtColumn" msprop:Generator_UserColumnName="cramt" type="xs:double" minOccurs="0" />
+              <xs:element name="runbal" msprop:Generator_ColumnVarNameInTable="columnrunbal" msprop:Generator_ColumnPropNameInRow="runbal" msprop:Generator_ColumnPropNameInTable="runbalColumn" msprop:Generator_UserColumnName="runbal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="get_postbank_clientdata" msprop:Generator_TableClassName="get_postbank_clientdataDataTable" msprop:Generator_TableVarName="tableget_postbank_clientdata" msprop:Generator_RowChangedName="get_postbank_clientdataRowChanged" msprop:Generator_TablePropName="get_postbank_clientdata" msprop:Generator_RowDeletingName="get_postbank_clientdataRowDeleting" msprop:Generator_RowChangingName="get_postbank_clientdataRowChanging" msprop:Generator_RowEvHandlerName="get_postbank_clientdataRowChangeEventHandler" msprop:Generator_RowDeletedName="get_postbank_clientdataRowDeleted" msprop:Generator_RowClassName="get_postbank_clientdataRow" msprop:Generator_UserTableName="get_postbank_clientdata" msprop:Generator_RowEvArgName="get_postbank_clientdataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PBAccount" msprop:Generator_ColumnVarNameInTable="columnPBAccount" msprop:Generator_ColumnPropNameInRow="PBAccount" msprop:Generator_ColumnPropNameInTable="PBAccountColumn" msprop:Generator_UserColumnName="PBAccount">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Account_Status" msprop:Generator_ColumnVarNameInTable="columnAccount_Status" msprop:Generator_ColumnPropNameInRow="Account_Status" msprop:Generator_ColumnPropNameInTable="Account_StatusColumn" msprop:Generator_UserColumnName="Account_Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Open_Date" msprop:Generator_ColumnVarNameInTable="columnOpen_Date" msprop:Generator_ColumnPropNameInRow="Open_Date" msprop:Generator_ColumnPropNameInTable="Open_DateColumn" msprop:Generator_UserColumnName="Open_Date" type="xs:dateTime" />
+              <xs:element name="Last_Trxn_Date" msprop:Generator_ColumnVarNameInTable="columnLast_Trxn_Date" msprop:Generator_ColumnPropNameInRow="Last_Trxn_Date" msprop:Generator_ColumnPropNameInTable="Last_Trxn_DateColumn" msprop:Generator_UserColumnName="Last_Trxn_Date" type="xs:dateTime" />
+              <xs:element name="Account_Balance" msprop:Generator_ColumnVarNameInTable="columnAccount_Balance" msprop:Generator_ColumnPropNameInRow="Account_Balance" msprop:Generator_ColumnPropNameInTable="Account_BalanceColumn" msprop:Generator_UserColumnName="Account_Balance" type="xs:double" />
+              <xs:element name="PostBank_ClientID" msprop:Generator_ColumnVarNameInTable="columnPostBank_ClientID" msprop:Generator_ColumnPropNameInRow="PostBank_ClientID" msprop:Generator_ColumnPropNameInTable="PostBank_ClientIDColumn" msprop:Generator_UserColumnName="PostBank_ClientID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MobileNo" msprop:Generator_ColumnVarNameInTable="columnMobileNo" msprop:Generator_ColumnPropNameInRow="MobileNo" msprop:Generator_ColumnPropNameInTable="MobileNoColumn" msprop:Generator_UserColumnName="MobileNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pension_Amount" msprop:Generator_ColumnVarNameInTable="columnPension_Amount" msprop:Generator_ColumnPropNameInRow="Pension_Amount" msprop:Generator_ColumnPropNameInTable="Pension_AmountColumn" msprop:Generator_UserColumnName="Pension_Amount" type="xs:double" />
+              <xs:element name="Premier_Instal" msprop:Generator_ColumnVarNameInTable="columnPremier_Instal" msprop:Generator_ColumnPropNameInRow="Premier_Instal" msprop:Generator_ColumnPropNameInTable="Premier_InstalColumn" msprop:Generator_UserColumnName="Premier_Instal" type="xs:double" />
+              <xs:element name="Fin_Instal" msprop:Generator_ColumnVarNameInTable="columnFin_Instal" msprop:Generator_ColumnPropNameInRow="Fin_Instal" msprop:Generator_ColumnPropNameInTable="Fin_InstalColumn" msprop:Generator_UserColumnName="Fin_Instal" type="xs:double" />
+              <xs:element name="Pension_Ratio" msprop:Generator_ColumnVarNameInTable="columnPension_Ratio" msprop:Generator_ColumnPropNameInRow="Pension_Ratio" msprop:Generator_ColumnPropNameInTable="Pension_RatioColumn" msprop:Generator_UserColumnName="Pension_Ratio" type="xs:int" />
+              <xs:element name="Client_Limit" msprop:Generator_ColumnVarNameInTable="columnClient_Limit" msprop:Generator_ColumnPropNameInRow="Client_Limit" msprop:Generator_ColumnPropNameInTable="Client_LimitColumn" msprop:Generator_UserColumnName="Client_Limit" type="xs:double" />
+              <xs:element name="Available_Pension" msprop:Generator_ColumnVarNameInTable="columnAvailable_Pension" msprop:Generator_ColumnPropNameInRow="Available_Pension" msprop:Generator_ColumnPropNameInTable="Available_PensionColumn" msprop:Generator_UserColumnName="Available_Pension" type="xs:double" />
+              <xs:element name="Maximum_Loan" msprop:Generator_ColumnVarNameInTable="columnMaximum_Loan" msprop:Generator_ColumnPropNameInRow="Maximum_Loan" msprop:Generator_ColumnPropNameInTable="Maximum_LoanColumn" msprop:Generator_UserColumnName="Maximum_Loan" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:get_active_roles" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="get_message_types_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:get_message_types" />
+      <xs:field xpath="mstns:code" />
+      <xs:field xpath="mstns:message" />
+    </xs:unique>
+    <xs:unique name="get_child_reports_display_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:get_child_reports_display" />
+      <xs:field xpath="mstns:recordid" />
+    </xs:unique>
+    <xs:unique name="get_departments_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:get_departments" />
+      <xs:field xpath="mstns:code" />
+      <xs:field xpath="mstns:department" />
+    </xs:unique>
+    <xs:unique name="get_display_role_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:get_display_role" />
+      <xs:field xpath="mstns:recordid" />
+    </xs:unique>
+    <xs:unique name="get_master_reports_display_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:get_master_reports_display" />
+      <xs:field xpath="mstns:recordid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

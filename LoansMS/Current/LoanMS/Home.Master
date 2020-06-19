@@ -1,0 +1,143 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Home.master.vb" Inherits="LoansMS.Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css?parameter=1" rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="~/QuickBI.ico" type="image/x-icon" />
+    <link rel="icon" type="image/ico" href="~/QuickBI.ico" />
+    <link rel="apple-touch-icon" type="image/ico" href="/~/QuickBI.ico" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .jumbotron
+        {
+            background-color:teal;
+            height:auto;
+            margin-top:0%;
+            margin-bottom:0%;
+            padding-top:0;
+            padding-bottom:1%;
+        }
+        .page-header
+        {
+            margin-top:0%;
+            padding-top:0%;
+            padding-bottom:0%;
+            margin-bottom:0%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        Sys.WebForms.Menu._elementObjectMapper.getMappedObject = function ()
+        {
+            return false;
+        };
+        $(function ()
+        {   
+            //to format the main menu
+            //$(".nav li, .nav li a, .nav li ul").removeAttr('style')
+            //$(".navbar-nav li, .navbar-nav a, .navbar-nav ul").removeAttr('style');
+
+            //to format the submenus
+            //$(".dropdown-menu").parent().removeClass().addClass('dropdown');
+            //$(".dropdown>a").removeClass().addClass('dropdown-toggle').append('<b class="caret"></b>').attr('data-toggle', 'dropdown');
+            $(".dropdown-menu").closest("li").removeClass().addClass("dropdown-toggle");
+
+            //remove default click redirect effect
+            //$('.dropdown-toggle').attr('onclick', '').off('click');
+
+            //acticate the bootstrap active class
+            $("a.selected").closest("li").addClass("active");
+            $("a.selected").closest(".dropdown-toggle").addClass("active");
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server" >
+        
+        <div class="container">
+
+            <div class="panel-group" style="padding:0; margin:0;">
+
+                <div class="panel" style="padding:0; margin:0;">
+
+                    <div class="panel-heading" style="margin:0; padding:0;">
+
+                        <div class="jumbotron">
+
+                            <div class="col-md-4">
+                                <div class="page-header">
+                                    <h1>Quick BI</h1>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+
+                            </div>
+
+                                <div class="container-fluid" style="padding:2%; border-radius:8px;">
+                                    <div class="col-md-6">
+                                        <div class="navbar navbar-default">
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenuresize" aria-expanded="false">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span><span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+                                            <%--<div class="collapse navbar-collapse" id="mainmenuresize">--%>
+                                            <div class="collapse navbar-collapse" id="mainmenuresize">
+                                                <asp:Menu
+                                                    ID="mnuMaster" runat="server" Orientation="Horizontal" IncludeStyleBlock="false"  SkipLinkText="" 
+                                                    RenderingMode="List" EnableViewState="false"
+                                                    CssClass="nav navbar-default" 
+                                                    StaticDisplayLevels="1"
+                                                    StaticMenuStyle-CssClass="nav navbar-nav"
+                                                    StaticMenuItemStyle-CssClass="nav" StaticSelectedStyle-CssClass="active"                                     
+                                                    DynamicMenuStyle-CssClass="dropdown-menu" DynamicSelectedStyle-CssClass="active" 
+                                                    MaximumDynamicDisplayLevels="5" DynamicMenuItemStyle-CssClass ="dropdown-item"
+                                                    >                                        
+                                                </asp:Menu>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="panel-body" style="padding:0; height:auto; font-family: 'Maiandra GD';  font-size: small; font-weight: normal;">
+                        <asp:ContentPlaceHolder ID="id_index" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                                        
+                    <div class="panel-footer" style="text-align:center;bottom:0; margin:0">
+                        <i>Copyright Marc & Glyn 2017</i>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+              
+    </form>
+
+</body>
+</html>
