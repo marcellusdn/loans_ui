@@ -49,35 +49,35 @@
             <div class="row">
                 <div class="panel panel-info">
                     <div class="row form-group">
-                            <div class="col-md-2">
-                                <label class="control-label" style="padding-top: 2%; text-align: center" id="lbmobilenos" for="txtMobileNos" runat="server">Total Mobile Numbers:</label>
-                                <input type="text" name="txtMobileNos" id="txtMobileNos" value="" disabled="disabled" class="form-control" runat="server" />
-                            </div>
-                            <div class="col-md-2">
-                                <label class="control-label" style="padding-top: 2%" id="lbUniqueMobile" for="txtUniqueMobile" runat="server">Unique Mobile Numbers:</label>
-                                <input type="text" name="txtUniqueMobile" id="txtUniqueMobile" value="" disabled="disabled" class="form-control" runat="server" />
-                            </div>
-                            <div class="col-md-2">
-                                <label class="control-label" style="padding-top: 2%" id="lbAccountNos" for="txtAccountNos" runat="server">Account Numbers:</label>
-                                <input type="text" name="txtAccountNos" id="txtAccountNos" value="" disabled="disabled" class="form-control" runat="server" />
-                            </div>
-                            <div class="col-md-2">
-                                <label class="control-label" style="padding-top: 2%" id="lbUniqueAccounts" for="txtUniqueAccounts" runat="server">Unique Accounts:</label>
-                                <input type="text" name="txtUniqueAccounts" id="txtUniqueAccounts" disabled="disabled" value="" class="form-control" runat="server" />
-                            </div>
-                            <div class="col-md-1">
-                                <label class="control-label" style="padding-top: 2%" id="Label1" for="txtMinAirtime" runat="server">Minimum:</label>
-                                <input type="text" name="txtMinAirtime" id="txtMinAirtime" disabled="disabled" value="" class="form-control" runat="server" />
-                            </div>
-                            <div class="col-md-1">
-                                <label class="control-label" style="padding-top: 2%" id="lbMaxLength" for="txtMaxAirtime" runat="server">Maximum:</label>
-                                <input type="text" name="txtMaxAirtime" id="txtMaxAirtime" disabled="disabled" value="" class="form-control" runat="server" />
-                            </div>
-                            <div class="col-md-2">
-                                <label class="control-label" style="padding-top: 2%" id="lbCost" for="txtCost" runat="server">Estimated Cost:</label>
-                                <input type="text" name="txtCost" id="txtCost" value="" disabled="disabled" class="form-control" runat="server" />
-                            </div>
+                        <div class="col-md-2">
+                            <label class="control-label" style="padding-top: 2%; text-align: center" id="lbmobilenos" for="txtMobileNos" runat="server">Total Mobile Numbers:</label>
+                            <input type="text" name="txtMobileNos" id="txtMobileNos" value="" disabled="disabled" class="form-control" runat="server" />
                         </div>
+                        <div class="col-md-2">
+                            <label class="control-label" style="padding-top: 2%" id="lbUniqueMobile" for="txtUniqueMobile" runat="server">Unique Mobile Numbers:</label>
+                            <input type="text" name="txtUniqueMobile" id="txtUniqueMobile" value="" disabled="disabled" class="form-control" runat="server" />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label" style="padding-top: 2%" id="lbAccountNos" for="txtAccountNos" runat="server">Account Numbers:</label>
+                            <input type="text" name="txtAccountNos" id="txtAccountNos" value="" disabled="disabled" class="form-control" runat="server" />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label" style="padding-top: 2%" id="lbUniqueAccounts" for="txtUniqueAccounts" runat="server">Unique Accounts:</label>
+                            <input type="text" name="txtUniqueAccounts" id="txtUniqueAccounts" disabled="disabled" value="" class="form-control" runat="server" />
+                        </div>
+                        <div class="col-md-1">
+                            <label class="control-label" style="padding-top: 2%" id="Label1" for="txtMinAirtime" runat="server">Minimum:</label>
+                            <input type="text" name="txtMinAirtime" id="txtMinAirtime" disabled="disabled" value="" class="form-control" runat="server" />
+                        </div>
+                        <div class="col-md-1">
+                            <label class="control-label" style="padding-top: 2%" id="lbMaxLength" for="txtMaxAirtime" runat="server">Maximum:</label>
+                            <input type="text" name="txtMaxAirtime" id="txtMaxAirtime" disabled="disabled" value="" class="form-control" runat="server" />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label" style="padding-top: 2%" id="lbCost" for="txtCost" runat="server">Estimated Cost:</label>
+                            <input type="text" name="txtCost" id="txtCost" value="" disabled="disabled" class="form-control" runat="server" />
+                        </div>
+                    </div>
                 </div>
             </div>
             
